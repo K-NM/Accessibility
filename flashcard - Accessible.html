@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href='style.css' rel='stylesheet'>
-        <title>Flashcards</title>
-    </head>
-    <body>
-        <h1>Revise with flashcards</h1>
-        
-        <main><!-- Container for flashcards -->
-            <div class="flashcard" onclick="flipCard(this)"> <!-- Flashcard with front and back sides -->
-                <div class="side" id="front"><img src="elephant.jpg" height="200px;"></div>
-                <div class="side" id="back" style="display: none;"><div>elephant</div>
-                A large mammal with a long trunk and big ears</div>
-            </div>
-            
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='style.css' rel='stylesheet'>
+    <title>Flashcards</title>
+</head>
+<body>
+    <h1>Revise with flashcards</h1>
+    
+    <main><!-- Container for flashcards -->
+        <div class="flashcard" onclick="flipCard(this)"> <!-- Flashcard with front and back sides -->
+            <div class="side" id="front"><img src="elephant.jpg" height="200px;"></div>
+            <div class="side" id="back" style="display: none;"><div>elephant</div>
+            A large mammal with a long trunk and big ears</div>
+        </div>    
     </main>
-        <script>
-            // JS would ideally be in an external stylesheet!
+    
+</body>
+<footer>
+    <script>
+        // JS would ideally be in an external stylesheet!
 
-            // JavaScript for flipping the card
-            function flipCard(card) {
-                // Get references to the front and back sides of the flashcard
-                const front = card.querySelector('#front');
-                const back = card.querySelector('#back');
-                // Toggle the display of the front and back sides
-                if (front.style.display === 'block') {
-                    front.style.display = 'none';
-                    back.style.display = 'block';
-                } else {
-                    front.style.display = 'block';
-                    back.style.display = 'none';
-                }
+        // JavaScript for flipping the card
+        function flipCard(card) {
+            // Get references to the front and back sides of the flashcard
+            const front = card.querySelector('#front');
+            const back = card.querySelector('#back');
+            // Toggle the display of the front and back sides
+            if (front.style.display === 'block') {
+                front.style.display = 'none';
+                back.style.display = 'block';
+            } else {
+                front.style.display = 'block';
+                back.style.display = 'none';
             }
-        </script>
-    </body>
+        }
+    </script>
+</footer>
 </html>
