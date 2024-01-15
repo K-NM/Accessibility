@@ -1,4 +1,8 @@
-h1{
+html {
+    background-color: #CCC;
+}
+
+h1, h2{
     font-family: helvetica;
 }
 
@@ -21,13 +25,19 @@ main {
     /* border: 1px solid #f00; */
 }
 
+img {
+    border-radius: 20px;
+}
+
 .flashcard {
     width: 300px;
     height: 200px;
     background-color: #fff;
     border: 1px solid #ddd;
+    border-radius: 25px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    margin: 10px;
     text-align: center;
     cursor: pointer;
     transition: transform 0.2s;
