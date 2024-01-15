@@ -7,17 +7,18 @@ h1{
     color: #fff;
     text-align: center;
     padding: 10px;
+    border-radius: 25px;
 }
 
 main {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 75hv;
+    max-height: 90hv;
+    width: auto;
     margin: 0;
-    border: 1px solid #f00;
+    /* border: 1px solid #f00; */
 }
 
 .flashcard {
