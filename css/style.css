@@ -23,7 +23,7 @@ main {
     text-align: center;
     cursor: pointer;
     transition: transform 0.2s;
-    color: lightblue;
+    color: #000;
 }
 
 .flashcard:hover {
